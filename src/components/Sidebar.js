@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom'
-import { sidebarUserData } from '../sidebarData'
+import { sidebarUserData } from '../fakeData/sidebarData';
 
 const Sidebar = () => {
     const location = useLocation();

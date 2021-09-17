@@ -14,6 +14,7 @@ const AllProducts = () => {
         history.push(link);
     }
     
+    
 
     return (
         <div className='container mt-5'>
@@ -37,6 +38,8 @@ const AllProducts = () => {
                         <Table responsive hover border-less={"true"}>
                             <thead>
                                 <tr>
+                                    <th>SL</th>
+                                    <th>Id</th>
                                     <th>Name</th>
                                     <th>Price</th>
                                     <th>Type</th>
@@ -46,8 +49,10 @@ const AllProducts = () => {
                             <tbody>
                                 {
                                     products?.length > 0 ? 
-                                    products?.map(product => 
+                                    products?.map((product, index) => 
                                         <tr key={product?.id}>
+                                            <td>{index+1}</td>
+                                            <td>{product?.id}</td>
                                             <td>{product?.name}</td>
                                             <td>${product?.price}</td>
                                             <td>{product?.type}</td>

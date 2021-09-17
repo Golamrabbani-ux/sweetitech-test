@@ -8,7 +8,7 @@ const About = () => {
                 <div className='col-md-6'>
                     <div>
                         <h1 className='title text-danger'>ABOUT PAGE</h1>
-                        <h6 className='small-title'>Access any one user</h6>
+                        <h6 className='small-title'>Access any user</h6>
                     </div>
                 </div>
                 <div className='col-md-6'>

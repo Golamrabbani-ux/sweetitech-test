@@ -14,13 +14,13 @@ const Admin = () => {
                         <div>
                             <h1 className='title text-danger'>WELLCOME TO</h1>
                             <h1 className='title text-danger'>ADMIN PAGE</h1>
-                            <h6 className='small-title'>Access any one user</h6>
+                            <h6 className='small-title'>Access any admin user</h6>
                         </div>
                         :
                         <div>
                             <p>
                                 Admin page access only admin user.<br />
-                                Now you can logout and again login with admin checed.
+                                Now you can logout and again login with admin checked.
                             </p>
                         </div>
                     }

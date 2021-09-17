@@ -6,6 +6,7 @@ import { cartReducer } from './reducers/cartReducer';
 import { userReducer } from './reducers/userReducer';
 import { productListReducer, soldProductListReducer } from './reducers/productReducer';
 import { myOrderReducer } from './reducers/myOrderReducer';
+import products from '../fakeData/products';
 
 const reducer = combineReducers({
     cart:cartReducer,
@@ -16,7 +17,7 @@ const reducer = combineReducers({
 });
 
 const cartItemsFromStorages = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
-const productsFromStorages = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) : [];
+const productsFromStorages = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) : products;
 const soldProductsFromStorages = localStorage.getItem('soldProducts') ? JSON.parse(localStorage.getItem('soldProducts')) : [];
 const orderFromStorages = localStorage.getItem('myOrder') ? JSON.parse(localStorage.getItem('myOrder')) : [];
 const userInfoFromStorages = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : {};

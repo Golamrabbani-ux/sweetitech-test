@@ -25,9 +25,7 @@ const EditProduct = () => {
     const onSubmit = product => {
         const payload = {
             ...product,
-            id,
-            profitPercentage: (Number(product.price) * 5 / 100),
-            image: 'https://motherboarddb.com/media/images/Gigabyte/GA-A320M-S2H/GA-A320M-S2H-1.png'
+            id
         }
         dispatch(editProduct(payload));
     };
