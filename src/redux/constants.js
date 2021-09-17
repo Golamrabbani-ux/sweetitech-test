@@ -1,0 +1,17 @@
+export const CART_ADD_ITEM = 'CART_ADD_ITEM';
+export const CART_REMOVE_ITEM = 'CART_REMOVE_ITEM';
+export const CART_REMOVE_RESET = 'CART_REMOVE_RESET';
+
+export const USER_LOGIN = 'USER_LOGIN';
+export const USER_OUT = 'USER_OUT';
+
+export const PRODUCT_ADD = 'PRODUCT_ADD';
+export const PRODUCT_UPDATE = 'PRODUCT_UPDATE';
+export const PRODUCT_DELETE = 'PRODUCT_DELETE';
+export const PRODUCT_RESET = 'PRODUCT_RESET';
+
+export const SOLD_PRODUCT_ADD = 'SOLD_PRODUCT_ADD';
+
+export const MY_ORDER_ADD = 'MY_ORDER_ADD';
+
+export const TOP_PROFITABLE_PRODUCT = 'TOP_PROFITABLE_PRODUCT';
